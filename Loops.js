@@ -32,10 +32,19 @@ for(let i = 1; i<=3; i++){
 }
 
 //While Loop
-let i=5;
-while(i>=1){
-    console.log(i);
-    i--;
+//print the sum of digits of number
+let number = 23456;
+let sum = 0;
+// Create a copy of the original number to manipulate in the loop
+let copy = number;
+// Start a while loop that runs as long as 'copy' is greater than 0
+while(copy > 0) {
+    // Get the last digit of 'copy' using the modulo operator
+    digit = copy % 10;
+    // Add the extracted digit to 'sum'
+    sum += digit;
+    // Remove the last digit from 'copy' by dividing it by 10 and taking the floor of the result
+    copy = Math.floor(copy / 10);
 }
 
 //Loops with Arrays
